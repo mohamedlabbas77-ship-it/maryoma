@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <style>
+        body {
+            background-color: #050510;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Tahoma', sans-serif;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .heart-container {
+            position: relative;
+            width: 260px;
+            height: 240px;
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart-frame {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ff1744, #ff5252);
+            clip-path: path('M130,218 C130,218 220,148 220,88 C220,42 182,16 140,16 C110,16 130,46 130,46 C130,46 150,16 120,16 C78,16 40,42 40,88 C40,148 130,218 130,218 Z');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 35px rgba(255, 23, 68, 0.7);
+        }
+
+        .heart-frame img {
+            width: 92%;
+            height: 92%;
+            object-fit: cover;
+            clip-path: path('M130,204 C130,204 206,138 206,82 C206,44 172,20 135,20 C108,20 130,46 130,46 C130,46 152,20 125,20 C88,20 54,44 54,82 C54,138 130,204 130,204 Z');
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            margin-top: 35px;
+            font-size: 30px;
+            color: #ff8fa3;
+            text-shadow: 0 0 15px rgba(255, 143, 163, 0.6);
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #bbb;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart-container">
+        <div class="heart-frame">
+            <!-- ضع رابط صورتها المباشر هنا أو اسم صورتها -->
+            <img src="love.jpg" alt="Love">
+        </div>
+    </div>
+
+    <h1>Medoud ❤</h1>
+    <p>إلى أبد الآبدين...</p>
+
+</body>
+</html>
